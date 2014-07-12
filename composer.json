@@ -17,6 +17,9 @@
         "erusev/parsedown-extra": "0.*",
         "way/database": "dev-master"
     },
+    "require-dev": {
+        "phpunit/phpunit": "4.*"
+    },
     "autoload": {
         "classmap": [
             "src/migrations",
