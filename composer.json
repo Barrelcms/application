@@ -26,7 +26,7 @@
             "tests/TestCase.php"
         ],
         "psr-4": {
-            "Barrel\\": "src/barrel"
+            "Barrel\\": "src/Barrel"
         }
     },
     "minimum-stability": "stable"
