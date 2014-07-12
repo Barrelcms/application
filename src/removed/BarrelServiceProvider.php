@@ -2,7 +2,7 @@
 
 use Illuminate\Support\ServiceProvider;
 
-class MarkdownServiceProvider extends ServiceProvider {
+class BarrelServiceProvider extends ServiceProvider {
 
     /**
      * Indicates if loading of the provider is deferred.
