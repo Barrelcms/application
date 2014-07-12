@@ -1,6 +1,8 @@
 {
     "name": "barrel/application",
-    "description": "",
+    "description": "The Barrel Content Management System",
+    "keywords": ["cms", "platform", "application"],
+    "license": "MIT",
     "authors": [
         {
             "name": "BarrelCMS",
