@@ -1,0 +1,28 @@
+{
+    "name": "barrel/application",
+    "description": "",
+    "authors": [
+        {
+            "name": "BarrelCMS",
+            "email": "joe@josephralph.co.uk"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*",
+        "laravel/framework": "4.2.*",
+        "rcrowe/twigbridge": "0.6.*@dev",
+        "erusev/parsedown-extra": "0.*",
+        "way/database": "dev-master"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations",
+            "tests/TestCase.php"
+        ],
+        "psr-4": {
+            "Barrel\\": "src/barrel"
+        }
+    },
+    "minimum-stability": "stable"
+}
