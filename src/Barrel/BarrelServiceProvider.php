@@ -1,4 +1,4 @@
-<?php
+<?php namespace Barrel;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -18,7 +18,7 @@ class MarkdownServiceProvider extends ServiceProvider {
      */
     public function boot()
     {
-        $this->package('barrelcms/application');
+        $this->package('barrelcms/application', 'barrel');
     }
 
     /**
