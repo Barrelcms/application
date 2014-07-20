@@ -11,7 +11,7 @@ class User extends Model implements UserInterface, RemindableInterface {
     use UserTrait, RemindableTrait;
 
     public static $rules = [
-        'username' => 'required|unique:users,username,:id|min:5',
+        'username' => 'unique:users,username,:id|min:5',
         'email' => 'required|unique:users,email,:id|email',
         'password' => 'required|min:6'
     ];

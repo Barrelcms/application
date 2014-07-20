@@ -1,4 +1,4 @@
-<?php namespace Barrel;
+<?php namespace Barrel\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -39,6 +39,18 @@ class BarrelServiceProvider extends ServiceProvider {
     public function provides()
     {
         return array();
+    }
+
+    /**
+     * Register application routes.
+     *
+     * @return void
+     */
+    public function routes()
+    {
+        foreach (File::allFiles(__DIR__.'/../../routes/') as $routes) {
+            require_once $routes->getPathName();
+        }
     }
 
 }
